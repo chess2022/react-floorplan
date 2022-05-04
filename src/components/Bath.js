@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function Bath() {
-  return <p className="bath">{prop.size} Bath</p>;
+export default function Bath(props) {
+  return (
+    <div>
+      <p>{props.size} Bath</p>
+    </div>
+  );
 }

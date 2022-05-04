@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function LivingRoom() {
-  return <p className="livingRoom">Living Room</p>;
+  return (
+    <div >
+      <p>Living Room</p>
+    </div>
+  );
 }

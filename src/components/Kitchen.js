@@ -4,9 +4,10 @@ import Sink from "./Sink";
 
 export default function Kitchen() {
   return (
-    <div className="weather">
-      <Sink />
-      <Oven />
+    <div >
+        Kitchen
+        <Sink />
+        <Oven />
     </div>
   );
 }

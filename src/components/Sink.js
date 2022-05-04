@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Sink() {
-  return <p className="sink">Sink</p>;
+  return (
+    <div id="sink">
+      <p>Sink</p>
+    </div>
+  );
 }

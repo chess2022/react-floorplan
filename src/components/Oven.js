@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Oven() {
-  return <p className="oven">Oven</p>;
+  return (
+    <div id="oven">
+      <p>Oven</p>
+    </div>
+  );
 }

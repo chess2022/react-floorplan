@@ -1,0 +1,47 @@
+.floorplan {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+    "bed1 bed1 living living kitchen"
+    "bed1 bed1 living living kitchen"
+    "fbath fbath living living kitchen"
+    "bed2 bed2 hbath bed3 bed3"
+    "bed2 bed2 hbath bed3 bed3";
+}
+
+.floorplan > #bed1 {
+  grid-area: bed1;
+  background-color: teal;
+}
+
+.floorplan > #bed2 {
+  grid-area: bed2;
+  background-color: teal;
+}
+
+.floorplan > #bed3 {
+  grid-area: bed3;
+  background-color: teal;
+}
+
+.floorplan > #living {
+  grid-area: living;
+  background-color: tan;
+}
+
+.floorplan > #kitchen {
+  grid-area: kitchen;
+  background-color: orange;
+}
+
+.floorplan > #fbath {
+  grid-area: fbath;
+  background-color: green;
+}
+
+.floorplan > #hbath {
+  grid-area: hbath;
+  background-color: green;
+}
+
