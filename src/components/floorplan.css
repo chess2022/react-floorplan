@@ -1,47 +1,86 @@
 .floorplan {
   display: grid;
-  grid-auto-rows: 1fr;
-  grid-auto-columns: 1fr;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
   grid-template-areas: 
     "bed1 bed1 living living kitchen"
     "bed1 bed1 living living kitchen"
     "fbath fbath living living kitchen"
     "bed2 bed2 hbath bed3 bed3"
     "bed2 bed2 hbath bed3 bed3";
+  color: white;
 }
 
 .floorplan > #bed1 {
+  display: flex;
   grid-area: bed1;
   background-color: teal;
-}
+  justify-content: center;
+  align-items: center;}
 
 .floorplan > #bed2 {
+  display: flex;
   grid-area: bed2;
   background-color: teal;
-}
+  justify-content: center;
+  align-items: center;}
 
 .floorplan > #bed3 {
+  display: flex;
   grid-area: bed3;
   background-color: teal;
-}
+  justify-content: center;
+  align-items: center;}
 
 .floorplan > #living {
+  display: flex;
   grid-area: living;
   background-color: tan;
-}
+  justify-content: center;
+  align-items: center;}
 
 .floorplan > #kitchen {
+  display: flex;
+  flex-direction: column;
   grid-area: kitchen;
   background-color: orange;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
 }
 
 .floorplan > #fbath {
+  display: flex;
   grid-area: fbath;
-  background-color: green;
-}
+  background-color: olivedrab;
+  justify-content: center;
+  align-items: center;}
 
 .floorplan > #hbath {
+  display: flex;
   grid-area: hbath;
-  background-color: green;
+  background-color: olivedrab;
+  justify-content: center;
+  align-items: center;
+}
+
+.appliances {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oven, .sink {
+  flex-grow: 1;
+  /* border: 1pt solid; */
+  padding: 6px;
+  height: 20px;
+}
+
+.oven {
+  background-color: rgb(181, 9, 9);
+}
+
+.sink {
+  background-color: rgb(113, 59, 28);
 }
 

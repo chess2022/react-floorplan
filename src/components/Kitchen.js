@@ -4,10 +4,15 @@ import Sink from "./Sink";
 
 export default function Kitchen() {
   return (
-    <div >
-        Kitchen
-        <Sink />
-        <Oven />
-    </div>
+    <>
+      <div className="appliances">
+        <div className="sink">
+          <Sink />
+        </div>
+        <div className="oven">
+          <Oven />
+        </div>
+      </div>
+    </>
   );
 }
